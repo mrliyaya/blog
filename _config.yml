@@ -4,21 +4,21 @@
 
 # Site
 title: Hexo
-subtitle: ''
-description: ''
+subtitle: ""
+description: ""
 keywords:
 author: John Doe
 language: zh-CN
-timezone: ''
+timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://yayali.netlify.app/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-    trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-    trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -29,18 +29,18 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-    - aboueme/**
-    - aaa/**
-    - bbb/**
+  - aboueme/**
+  - aaa/**
+  - bbb/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
-    enable: true # Open external links in new tab
-    field: site # Apply to the whole site
-    exclude: ''
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -52,9 +52,9 @@ future: true
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-    path: ''
-    per_page: 12
-    order_by: -date
+  path: ""
+  per_page: 12
+  order_by: -date
 
 # Category & Tag
 default_category: uncategorized
@@ -72,7 +72,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -93,15 +93,15 @@ theme: hexo-theme-matery
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-    type: ''
+  type: ""
 
 # 表情 emoj
 githubEmojis:
-    enable: true
-    className: github-emoji
-    inject: true
-    styles:
-    customEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
 # highlight:
 #     enable: true
 #     line_number: true
@@ -116,37 +116,37 @@ githubEmojis:
 #     tab_replace: ''
 # 代码高亮
 highlight: #代码块的设置
-    enable: false #开启代码块高亮
-    line_number: true #如果未指定语言，则启用自动检测
-    auto_detect: false #显示行数
-    tab_replace: '' #用n个空格替换tabs；如果值为空，则不会替换tabs
-    wrap: true
-    hljs: false # 关闭原有的代码高亮，使用自己的
+  enable: false #开启代码块高亮
+  line_number: true #如果未指定语言，则启用自动检测
+  auto_detect: false #显示行数
+  tab_replace: "" #用n个空格替换tabs；如果值为空，则不会替换tabs
+  wrap: true
+  hljs: false # 关闭原有的代码高亮，使用自己的
 prism_plugin:
-    mode: 'preprocess' # realtime/preprocess
-    theme: 'tomorrow'
-    line_number: false # default false
-    custom_css:
+  mode: "preprocess" # realtime/preprocess
+  theme: "tomorrow"
+  line_number: false # default false
+  custom_css:
 
 # 搜索功能
 
 search:
-    path: search.xml
-    field: post
+  path: search.xml
+  field: post
 # 文章字数统计
 word_count:
-    enable: true
-    post_wordcount: true
-    min2read: true
-    total_wordcount: true
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
 
 #  添加RSS订阅
 feed:
-    type: atom
-    path: atom.xml
-    limit: 20
-    hub:
-    content:
-    content_limit: 140
-    content_limit_delim: ' '
-    order_by: -date
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: " "
+  order_by: -date

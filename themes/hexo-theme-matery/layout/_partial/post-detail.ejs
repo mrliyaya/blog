@@ -161,7 +161,17 @@
             <% } %>
         </div>
     </div>
+    <script src="https://utteranc.es/client.js"
+        repo="mrliyaya/blog_comment"
+        issue-term="pathname"
+        theme="github-light"  
+        crossorigin="anonymous"
+        async>
+</script>
 
+    <% if (theme.utteranc && theme.utteranc.enable) { %>
+        <%- partial('_partial/utteranc') %>
+    <% } %>
     <% if (theme.gitalk && theme.gitalk.enable) { %>
         <%- partial('_partial/gitalk') %>
     <% } %>

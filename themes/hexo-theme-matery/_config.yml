@@ -342,6 +342,14 @@ postCalendar: true
 
 # 畅言需要备案。
 
+# utterances 评论插件
+utterances:
+  enable: true
+  repo: mrliyaya/blog_comment
+  issueTerm: pathname
+  label: comment
+  theme: gitalk-theme-light
+
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
