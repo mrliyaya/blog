@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: yayali
 subtitle: ""
 description: ""
 keywords:
-author: John Doe
+author: yayali
 language: zh-CN
-timezone: ""
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://yayali.netlify.app/
+url: https://yayali.com.cn/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -134,11 +134,11 @@ search:
   path: search.xml
   field: post
 # 文章字数统计
-word_count:
+wordCount:
   enable: true
-  post_wordcount: true
+  postWordCount: true
   min2read: true
-  total_wordcount: true
+  totalWordCount: true
 
 #  添加RSS订阅
 feed:
