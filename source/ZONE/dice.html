@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>掷骰子抽奖程序</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 50px;
+            }
+            button {
+                padding: 10px 20px;
+                margin-top: 20px;
+            }
+            #result {
+                font-size: 24px;
+                margin-top: 20px;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>掷骰子抽奖程序</h1>
+        <button id="rollButton">掷骰子</button>
+        <div id="result"></div>
+
+        <script>
+            const prizes = ['牛肉面', '看电影', '榴莲', '火锅', '辣条'];
+
+            document
+                .getElementById('rollButton')
+                .addEventListener('click', () => {
+                    const diceRoll = Math.floor(Math.random() * 6) + 1; // 随机生成 1 到 6 的数字
+                    const prizeIndex = (diceRoll - 1) % prizes.length; // 获取奖品索引
+                    const prize = prizes[prizeIndex]; // 根据骰子点数选择奖品
+                    document.getElementById(
+                        'result'
+                    ).innerText = `你掷出的点数是: ${diceRoll}，奖品是: ${prize}`;
+                });
+        </script>
+    </body>
+</html>
